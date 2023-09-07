@@ -1,0 +1,19 @@
+{
+  "name": "gzdl-demo",
+  "version": "1.0.0",
+  "description": "The gzdl-ui Rep Demo to Test",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [
+    "test",
+    "demo",
+    "gzdl-ui"
+  ],
+  "author": "gzdl-strive",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "3.2.37"
+  }
+}

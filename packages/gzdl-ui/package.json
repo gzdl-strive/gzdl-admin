@@ -1,11 +1,13 @@
 {
   "name": "gzdl-ui",
   "version": "0.1.0",
-  "description": "UI Component Project(Vue)",
+  "description": "基于Vue构建的UI组件库",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "pnpm build:components",
+    "build:all": "vite build",
+    "build:components": "esno ./scripts/build.ts",
     "test": "vitest",
     "test:run": "vitest run",
     "docs:dev": "vitepress dev docs",
@@ -17,13 +19,13 @@
     "changeset:version": "pnpm exec changeset version"
   },
   "keywords": [
-    "Vue",
-    "Component",
+    "Vite",
     "TypeScript"
   ],
   "author": "gzdl-strive",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@iconify-json/ic": "1.1.4",
     "@iconify-json/mdi": "^1.1.54",
     "@types/node": "^20.4.8",
@@ -39,15 +41,16 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
+    "esno": "^0.17.0",
     "happy-dom": "6.0.4",
     "prettier": "^3.0.1",
     "unocss": "0.45.6",
     "vitepress": "0.22.4",
     "vitepress-theme-demoblock": "1.4.2",
-    "vitest": "0.21.1",
-    "@changesets/cli": "^2.26.2"
+    "vitest": "0.21.1"
   },
   "dependencies": {
+    "fs-extra": "^11.1.1",
     "vue": "3.2.37"
   }
 }

@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig, UserConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "unocss/vite";
@@ -15,10 +15,11 @@ const rollupOptions = {
     globals: {
       vue: "Vue",
     },
+    assetFileNames: "assets/[ext]/[name].[ext]",
   },
 };
 
-export default defineConfig({
+const config = {
   // 插件
   plugins: [
     vue(),
@@ -57,6 +58,7 @@ export default defineConfig({
       // 导出模块格式
       formats: ["es", "umd", "iife"],
     },
+    outDir: "./dist",
   },
   test: {
     globals: true,
@@ -65,4 +67,8 @@ export default defineConfig({
       web: [/.[tj]sx$/],
     },
   },
-});
+};
+
+export { config };
+
+export default defineConfig(config as UserConfig);
