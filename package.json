@@ -1,0 +1,23 @@
+{
+  "name": "gzdl-admin",
+  "version": "1.0.0",
+  "description": "UI monorepo project",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node ./scripts/preinstall.js",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "pnpm",
+    "monorepo",
+    "vite"
+  ],
+  "author": "gzdl-strive",
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "husky": "^8.0.3",
+    "vite": "^4.4.9"
+  }
+}
