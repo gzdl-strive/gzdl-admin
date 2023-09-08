@@ -27,7 +27,7 @@
     "@changesets/cli": "^2.26.2",
     "@iconify-json/ic": "1.1.4",
     "@iconify-json/mdi": "^1.1.54",
-    "@types/node": "^20.4.8",
+    "@types/node": "^20.5.9",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "@vitejs/plugin-vue": "3.0.3",
