@@ -19,9 +19,6 @@ importers:
 
   packages/gzdl-demo:
     dependencies:
-      gzdl-ui:
-        specifier: ^0.1.9
-        version: 0.1.9
       vue:
         specifier: 3.2.37
         version: 3.2.37
@@ -3945,12 +3942,6 @@ packages:
       section-matter: 1.0.0
       strip-bom-string: 1.0.0
     dev: true
-
-  /gzdl-ui@0.1.9:
-    resolution: {integrity: sha512-syRNh1smZQbT88e0Xeubv4rMD6eo3sJYttPyVi73ZcMB0PEhve0BzvkA1CRe8z9dq6A35i4IRWCyujTRQFjBBA==}
-    dependencies:
-      vue: 3.2.37
-    dev: false
 
   /gzip-size@6.0.0:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
