@@ -43,7 +43,7 @@ jobs:
         run: pnpm install
       - name: Build with VitePress
         run: |
-          pnpm run docs:build
+          cd packages/gzdl-ui && pnpm run docs:build
           touch packages/gzdl-ui/docs/.vitepress/dist/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
