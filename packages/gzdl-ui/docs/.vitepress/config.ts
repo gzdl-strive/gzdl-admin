@@ -28,6 +28,7 @@ const config = {
       const { demoBlockPlugin } = require("vitepress-theme-demoblock");
       md.use(demoBlockPlugin);
     }
-  }
+  },
+  base: "/gzdl-admin/"
 }
 export default config;

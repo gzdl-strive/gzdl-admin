@@ -1,7 +1,7 @@
 import { App } from "vue";
 import SFCButton from "./SFCButton.vue";
 import JSXButton from "./jsxButton";
-import { Button } from "./button";
+import { Button } from "./Button";
 import { Link } from "./Link";
 import { Row } from "./Row";
 import { Col } from "./Col";
