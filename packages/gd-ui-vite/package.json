@@ -1,6 +1,6 @@
 {
   "name": "gd-ui-vite",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "基于Vue构建的UI组件库",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
     "docs:build": "vitepress build docs",
     "lint": "eslint --fix --ext .ts,.tsx,.vue src",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.vue\"",
+    "changeset:init": "pnpm exec changeset init",
     "changeset": "pnpm exec changeset",
     "changeset:version": "pnpm exec changeset version"
   },
