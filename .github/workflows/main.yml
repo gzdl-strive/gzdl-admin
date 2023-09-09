@@ -24,7 +24,7 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Lint
-        run: cd packages/gzdl-ui && pnpm run lint
+        run: cd packages/gs-ui && pnpm run lint
   # 单元测试任务
   UnitTest:
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Test
-        run: cd packages/gzdl-ui && pnpm run test:run
+        run: cd packages/gs-ui && pnpm run test:run
   # 预构建任务
   PreBuild:
     runs-on: ubuntu-latest
@@ -48,4 +48,4 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Build
-        run: cd packages/gzdl-ui && pnpm run build
+        run: cd packages/gs-ui && pnpm run build
