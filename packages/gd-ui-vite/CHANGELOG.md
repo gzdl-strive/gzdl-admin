@@ -1,4 +1,4 @@
-# gd-ui
+# gd-ui-vite
 
 ## 0.1.0
 

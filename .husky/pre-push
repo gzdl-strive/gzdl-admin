@@ -2,5 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "==========单元测试=========="
-cd packages/gd-ui
+cd packages/gd-ui-vite
 pnpm run test:run

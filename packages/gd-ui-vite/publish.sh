@@ -9,7 +9,7 @@ cp package.json dist/package.json && cp README.md dist/README.md
 echo "请进行登录相关操作: "
 npm login # 登录npm, 因为第一次发布比较严格，需要输入验证码
 echo "——————————publishing——————————"
-npm publish dist # 发布
+cd dist && npm publish # 发布
 # 还原镜像
 npm config set registry=$mirror
 echo "发布完成"
