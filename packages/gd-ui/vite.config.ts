@@ -52,9 +52,9 @@ const config = {
     lib: {
       entry: "./src/entry.ts",
       // 生成的包的名字，在iife/umd包中，同一页上的其它脚本可以访问它
-      name: "GsUI",
+      name: "GdUI",
       // 文件名，输出文件名的前缀
-      fileName: "gs-ui",
+      fileName: "gd-ui",
       // 导出模块格式
       formats: ["es", "umd", "iife"],
     },

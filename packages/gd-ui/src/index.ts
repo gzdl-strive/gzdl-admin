@@ -1,6 +1,6 @@
 import { createApp } from "vue";
-import GsUI from "./entry";
+import GdUI from "./entry";
 import App from "./App.vue";
 import "uno.css";
 
-createApp(App).use(GsUI).mount("#app");
+createApp(App).use(GdUI).mount("#app");

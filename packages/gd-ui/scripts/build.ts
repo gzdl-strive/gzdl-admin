@@ -33,7 +33,7 @@ const buildAll = async () => {
     fs.outputFile(
       path.resolve(outDir, "package.json"),
       `{
-        "name": "GsUI/${name}",
+        "name": "GdUI/${name}",
         "main": "index.umd.js",
         "module": "index.umd.js"
       }`,

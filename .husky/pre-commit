@@ -2,5 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "==========Eslint检查并修复错误=========="
-cd packages/gs-ui
+cd packages/gd-ui
 pnpm lint

@@ -2,7 +2,7 @@
   <img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo">
 </p>
 
-<h1 align="center">gs-ui</h1>
+<h1 align="center">gd-ui</h1>
 
 <p align="center">基于Vue的简易组件库</p>
 

@@ -1,4 +1,4 @@
-name: Publish GsUI To NPM
+name: Publish GdUI To NPM
 
 on:
   pull_request:
@@ -25,9 +25,9 @@ jobs:
       - name: Install Module
         run: pnpm install
       - name: Build
-        run: cd packages/gs-ui && pnpm run build
+        run: cd packages/gd-ui && pnpm run build
       - name: copy dep to package
-        run: cd packages/gs-ui && cp package.json dist/package.json && cp README.md dist/README.md
-      - run: npm publish packages/gs-ui/dist
+        run: cd packages/gd-ui && cp package.json dist/package.json && cp README.md dist/README.md
+      - run: npm publish packages/gd-ui/dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
