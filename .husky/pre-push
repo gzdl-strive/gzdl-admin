@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "==========Eslint检查并修复错误=========="
+echo "==========单元测试=========="
 cd packages/gs-ui
-pnpm lint
+pnpm run test:run

@@ -1,5 +1,5 @@
 {
-  "name": "gzdl-ui",
+  "name": "gs-ui",
   "version": "0.1.0",
   "description": "基于Vue构建的UI组件库",
   "main": "index.js",

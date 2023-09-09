@@ -5,7 +5,7 @@ import { config } from "../vite.config";
 
 const buildAll = async () => {
   // 全量打包
-  build(defineConfig(config as UserConfig) as InlineConfig);
+  await build(defineConfig(config as UserConfig) as InlineConfig);
 
   const baseOutDir = config.build.outDir;
   const srcDir = path.resolve(__dirname, "../src");
@@ -33,7 +33,7 @@ const buildAll = async () => {
     fs.outputFile(
       path.resolve(outDir, "package.json"),
       `{
-        "name": "gzdl-ui/${name}",
+        "name": "GsUI/${name}",
         "main": "index.umd.js",
         "module": "index.umd.js"
       }`,

@@ -17,8 +17,8 @@ const sidebar = {
   ]
 }
 const config = {
-  title: "🔨 GZDL-STRIVE-UI",
-  description: "GZDL-STRIVE-UI组件库",
+  title: "🔨 GsUI",
+  description: "GsUI组件库",
   themeConfig: {
     sidebar,
   },

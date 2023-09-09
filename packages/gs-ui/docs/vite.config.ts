@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig, UserConfig } from "vite";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "../config/unocss";
 
@@ -8,4 +8,4 @@ export default defineConfig({
     port: 3001,
     open: true,
   },
-});
+} as UserConfig);
