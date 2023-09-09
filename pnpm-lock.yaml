@@ -23,7 +23,7 @@ importers:
         specifier: 3.2.37
         version: 3.2.37
 
-  packages/gd-ui:
+  packages/gd-ui-vite:
     dependencies:
       fs-extra:
         specifier: ^11.1.1

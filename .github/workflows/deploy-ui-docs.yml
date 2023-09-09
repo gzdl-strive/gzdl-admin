@@ -43,11 +43,11 @@ jobs:
         run: pnpm install
       - name: Build with VitePress
         run: |
-          cd packages/gd-ui && pnpm run docs:build
+          cd packages/gd-ui-vite && pnpm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: packages/gd-ui/docs/.vitepress/dist
+          path: packages/gd-ui-vite/docs/.vitepress/dist
 
   # Deployment job
   deploy:
