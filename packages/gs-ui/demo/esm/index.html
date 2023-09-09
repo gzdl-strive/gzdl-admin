@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GsUI-Demo-ESModule</title>
+  <link rel="stylesheet" href="../../dist/assets/css/entry.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module">
+    import { createApp } from "vue/dist/vue.esm-bundler.js";
+    import GsUI from "../../dist/gs-ui.mjs";
+    
+    createApp({
+      template: `
+        <GButton color="blue" icon="search" size="small">普通按钮</GButton>
+        <GButton color="blue" icon="search" round :disabled="false">普通按钮</GButton>
+        <br />
+        <JSXButton round disabled />
+        <SFCButton />
+      `
+    }).use(GsUI).mount("#app");
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GsUI-Demo-IIFE</title>
+  <link rel="stylesheet" href="../../dist/assets/css/entry.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script src="../../node_modules/vue/dist/vue.global.js"></script>
+  <script src="../../dist/gs-ui.iife.js"></script>
+  <script>
+    const { createApp } = Vue;
+    // console.log('vue', Vue);
+    createApp({
+      template: `
+        <GButton color="blue" icon="search" size="small">普通按钮</GButton>
+        <GInput placeholder="input" />
+      `
+    }).use(GsUI.default).mount("#app");
+  </script>
+</body>
+</html>
