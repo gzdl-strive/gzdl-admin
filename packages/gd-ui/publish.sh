@@ -7,7 +7,7 @@ pnpm run build
 # 拷贝npm库需要的package.json以及README
 cp package.json dist/package.json && cp README.md dist/README.md
 echo "请进行登录相关操作: "
-npm login # 登录npm
+npm login # 登录npm, 因为第一次发布比较严格，需要输入验证码
 echo "——————————publishing——————————"
 npm publish dist # 发布
 # 还原镜像
