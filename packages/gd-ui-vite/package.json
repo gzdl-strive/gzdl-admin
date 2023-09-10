@@ -1,6 +1,6 @@
 {
   "name": "gd-ui-vite",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "description": "基于Vue构建的UI组件库",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.vue\"",
     "changeset:init": "pnpm exec changeset init",
     "changeset": "pnpm exec changeset",
-    "changeset:version": "pnpm exec changeset version"
+    "changeset:version": "rm -rf dist && pnpm exec changeset version"
   },
   "keywords": [
     "Vite",
@@ -52,8 +52,5 @@
   "dependencies": {
     "fs-extra": "^11.1.1",
     "vue": "3.2.37"
-  },
-  "files": [
-    "dist"
-  ]
+  }
 }
