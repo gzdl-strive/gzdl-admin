@@ -4,23 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GzdlUI-Demo-IIFE</title>
-  <link rel="stylesheet" href="../../dist/assets/entry.055cdb0f.css">
+  <title>GdUI-Demo-IIFE</title>
+  <link rel="stylesheet" href="../../dist/assets/css/entry.css">
 </head>
 <body>
   <div id="app"></div>
   <script src="../../node_modules/vue/dist/vue.global.js"></script>
-  <script src="../../dist/gzdl-ui.iife.js"></script>
+  <script src="../../dist/gd-ui.iife.js"></script>
   <script>
     const { createApp } = Vue;
     // console.log('vue', Vue);
-    // console.log("gzdlUI", GzdlUI)
     createApp({
       template: `
         <GButton color="blue" icon="search" size="small">普通按钮</GButton>
         <GInput placeholder="input" />
       `
-    }).use(GzdlUI.default).mount("#app");
+    }).use(GdUI.default).mount("#app");
   </script>
 </body>
 </html>

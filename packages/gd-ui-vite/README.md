@@ -1,10 +1,10 @@
 <p align="center">
-  <img width="150" src="https://vuejs.org/images/logo.png" alt="Vue logo">
+  <img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo">
 </p>
 
-<h2 align="center">gzdl-admin</h2>
+<h2 align="center">gd-ui-vite</h2>
 
-<p align="center">前端Monorepo项目，构建UI组件库</p>
+<p align="center">基于Vue的简易组件库</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/gd-ui-vite">
@@ -27,27 +27,25 @@
   </a>
 </p>
 
-- ✨ Build by Vite
 - 🎸 Vue3 Composition API
 - 🔥 Written in TypeScript
 
 ## Introduce
 - *目标*:
-  - 构建一个标准Monorepo工程.
-  - 构建Vue UI组件库
-  - 持续集成部署
+  - 构建一个标准Vue UI组件库.
 - *契机*:
   - 日常工作中经常用到组件库，就萌生了能不能自己做一个的想法.
   - 扩展自己的知识面，了解一些新知识.
 
 ## Features
 
-前端Monorepo项目.
+简易UI组件库.
 
-- Monorepo风格(基于pnpm workspace)
-- 独立的基于Vue的组件库
-- SSG风格文档自动化工具
-- seed项目模版
+- 基于Vue3
+- 支持JSX风格和Vue单文件组件
+- 标准的规范(`Eslint` + `Prettier` + `Husky`)
+- Vitepress + Github pages构建组件库文档
+- 基于Action CI实现持续集成与交付
 
 ## 快速上手
 对于使用Gd-UI开发网站的开发人员，您应该访问[Getting Started](https://gzdl-strive.github.io/gzdl-admin/)

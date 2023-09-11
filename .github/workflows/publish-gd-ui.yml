@@ -1,4 +1,4 @@
-name: Publish gzdl-ui To NPM
+name: Publish gd-ui-vite To NPM
 
 on:
   pull_request:
@@ -25,9 +25,9 @@ jobs:
       - name: Install Module
         run: pnpm install
       - name: Build
-        run: cd packages/gzdl-ui && pnpm run build
+        run: cd packages/gd-ui-vite && pnpm run build
       - name: copy dep to package
-        run: cd packages/gzdl-ui && cp package.json dist/package.json && cp README.md dist/README.md
-      - run: npm publish packages/gzdl-ui/dist
+        run: cd packages/gd-ui-vite && cp package.json dist/package.json && cp README.md dist/README.md
+      - run: npm publish packages/gd-ui-vite/dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

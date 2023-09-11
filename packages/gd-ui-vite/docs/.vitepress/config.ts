@@ -17,8 +17,8 @@ const sidebar = {
   ]
 }
 const config = {
-  title: "🔨 GZDL-STRIVE-UI",
-  description: "GZDL-STRIVE-UI组件库",
+  title: "🔨 GdUI",
+  description: "GdUI组件库",
   themeConfig: {
     sidebar,
   },
@@ -30,5 +30,6 @@ const config = {
     }
   },
   base: "/gzdl-admin/"
-}
+};
+
 export default config;

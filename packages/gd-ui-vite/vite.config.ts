@@ -52,9 +52,9 @@ const config = {
     lib: {
       entry: "./src/entry.ts",
       // 生成的包的名字，在iife/umd包中，同一页上的其它脚本可以访问它
-      name: "GzdlUI",
+      name: "GdUI",
       // 文件名，输出文件名的前缀
-      fileName: "gzdl-ui",
+      fileName: "gd-ui",
       // 导出模块格式
       formats: ["es", "umd", "iife"],
     },
@@ -65,6 +65,12 @@ const config = {
     environment: "happy-dom",
     transformMode: {
       web: [/.[tj]sx$/],
+    },
+    coverage: {
+      // 覆盖率引擎
+      provider: "istanbul",
+      // 输出格式
+      reporter: ["text", "json", "html"],
     },
   },
 };

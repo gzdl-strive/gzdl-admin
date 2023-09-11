@@ -4,8 +4,8 @@
   "description": "UI monorepo project",
   "main": "index.js",
   "scripts": {
-    "dev": "cd packages/gzdl-ui && pnpm run dev",
-    "docs:dev": "cd packages/gzdl-ui && pnpm run docs:dev",
+    "dev": "cd packages/gd-ui-vite && pnpm run dev",
+    "docs:dev": "cd packages/gd-ui-vite && pnpm run docs:dev",
     "preinstall": "node ./scripts/preinstall.js",
     "prepare": "husky install"
   },
