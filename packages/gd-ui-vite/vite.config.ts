@@ -66,6 +66,12 @@ const config = {
     transformMode: {
       web: [/.[tj]sx$/],
     },
+    coverage: {
+      // 覆盖率引擎
+      provider: "istanbul",
+      // 输出格式
+      reporter: ["text", "json", "html"],
+    },
   },
 };
 
