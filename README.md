@@ -22,6 +22,9 @@
   <a href="https://github.com/gzdl-strive/gzdl-admin/actions/workflows/main.yml">
     <img src="https://github.com/gzdl-strive/gzdl-admin/actions/workflows/main.yml/badge.svg?branch=main" alt="CI" style="max-width: 100%;" />
   </a>
+  <a href="https://codecov.io/gh/gzdl-strive/gzdl-admin" > 
+    <img src="https://codecov.io/gh/gzdl-strive/gzdl-admin/graph/badge.svg?token=WVS2WCMX42"/> 
+  </a>
   <a href="https://github.com/gzdl-strive/gzdl-admin/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/gzdl-strive/gzdl-admin" alt="open source protocol" />
   </a>
