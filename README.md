@@ -4,7 +4,7 @@
 
 <h2 align="center">gzdl-admin</h2>
 
-<p align="center">基于Vue3的UI组件库</p>
+<p align="center">前端Monorepo项目，构建UI组件库</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/gd-ui-vite">
@@ -31,6 +31,15 @@
 - 🎸 Vue3 Composition API
 - 🔥 Written in TypeScript
 
+## Introduce
+- *目标*:
+  - 构建一个标准Monorepo工程.
+  - 构建Vue UI组件库
+  - 持续集成部署
+- *契机*:
+  - 日常工作中经常用到组件库，就萌生了能不能自己做一个的想法.
+  - 扩展自己的知识面，了解一些新知识.
+
 ## Features
 
 前端Monorepo项目.
@@ -45,3 +54,10 @@
 
 - 中国大陆[加速镜像站点](https://gzdl-strive.github.io/gzdl-admin/)
 
+## 作者
+gzdl-strive
+
+## LICENSE
+[MIT](https://github.com/gzdl-strive/gzdl-admin/blob/main/LICENSE)
+
+Copyright (c) 2023-present gzdl-strive
