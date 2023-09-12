@@ -17,8 +17,11 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9(@types/node@20.4.7)
 
-  packages/gd-demo:
+  packages/gd-ui-demo:
     dependencies:
+      gd-ui-vite:
+        specifier: workspace:^
+        version: link:../gd-ui-vite
       vue:
         specifier: 3.2.37
         version: 3.2.37
@@ -104,6 +107,16 @@ importers:
       vitest:
         specifier: 0.21.1
         version: 0.21.1(c8@8.0.1)(happy-dom@6.0.4)
+
+  packages/gd-ui-vite/dist/Button: {}
+
+  packages/gd-ui-vite/dist/Col: {}
+
+  packages/gd-ui-vite/dist/Input: {}
+
+  packages/gd-ui-vite/dist/Link: {}
+
+  packages/gd-ui-vite/dist/Row: {}
 
 packages:
 
