@@ -5,6 +5,7 @@ import "gd-ui-vite/dist/assets/css/entry.css";
 createApp({
   template: `
     <JSXButton></JSXButton>
+    <SFCButton></SFCButton>
     <br />
     <br />
     <GButton color="purple">111</GButton>

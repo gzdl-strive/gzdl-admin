@@ -1,5 +1,8 @@
 <template>
   <div>
+    <h1>SFC-JSX</h1>
+    <SFCButton></SFCButton>
+    <JSXButton></JSXButton>
     <div class="section">
       <h3>颜色color</h3>
       <GButton class="btn" color="blue">普通按钮</GButton>
@@ -126,6 +129,7 @@
 </template>
 
 <script lang="ts">
+import { SFCButton, JSXButton } from "./entry";
 import { ref } from "vue";
 export default {
   name: "App",
@@ -137,6 +141,7 @@ export default {
       pwd,
     };
   },
+  components: { SFCButton, JSXButton },
 };
 </script>
 
