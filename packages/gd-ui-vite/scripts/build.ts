@@ -1,11 +1,11 @@
 import * as path from "path";
 import * as fs from "fs-extra";
-import { build, InlineConfig, defineConfig, UserConfig } from "vite";
+import { build, InlineConfig } from "vite";
 import { config } from "../vite.config";
 
 const buildAll = async () => {
   // 全量打包
-  await build(defineConfig(config as UserConfig) as InlineConfig);
+  await build();
 
   const baseOutDir = config.build.outDir;
   const srcDir = path.resolve(__dirname, "../src");
@@ -27,13 +27,17 @@ const buildAll = async () => {
       outDir,
     };
 
-    Object.assign(config.build, custom);
-    await build(defineConfig(config as UserConfig) as InlineConfig);
+    // Object.assign(config.build, custom);
+    // await build(defineConfig(config as UserConfig) as InlineConfig);
+
+    await build({
+      build: custom,
+    } as InlineConfig);
 
     fs.outputFile(
       path.resolve(outDir, "package.json"),
       `{
-        "name": "GdUI/${name}",
+        "name": "gd-ui-vite/${name}",
         "main": "index.umd.js",
         "module": "index.umd.js"
       }`,

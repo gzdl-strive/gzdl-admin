@@ -1,6 +1,11 @@
 <template>
   <div>
-    <div class="section">
+    <div class="section hide">
+      <h1>SFC-JSX</h1>
+      <SFCButton></SFCButton>
+      <JSXButton></JSXButton>
+    </div>
+    <div class="section hide">
       <h3>颜色color</h3>
       <GButton class="btn" color="blue">普通按钮</GButton>
       <GButton class="btn" color="green">测试</GButton>
@@ -39,7 +44,7 @@
       <GButton class="btn" color="purple" size="small" plain>按钮</GButton>
       <GButton class="btn" color="gray" size="large" plain>普通按钮</GButton>
     </div>
-    <div class="section">
+    <div class="section hide">
       <h3>链接颜色</h3>
       <GLink class="link" href="http://www.baidu.com" target="_blank">
         默认链接
@@ -75,7 +80,7 @@
         无下划线图标链接
       </GLink>
     </div>
-    <div class="section">
+    <div class="section hide">
       <h3>布局Row</h3>
       <GRow :gutter="16">
         <span>111</span>
@@ -126,6 +131,7 @@
 </template>
 
 <script lang="ts">
+import { SFCButton, JSXButton } from "./entry";
 import { ref } from "vue";
 export default {
   name: "App",
@@ -137,6 +143,7 @@ export default {
       pwd,
     };
   },
+  components: { SFCButton, JSXButton },
 };
 </script>
 

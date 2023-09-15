@@ -1,0 +1,25 @@
+name: Codecov Coverage
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  codecov:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.1.0
+        with:
+          version: 7.2.1
+      - name: Install modules
+        run: pnpm install
+      - name: Run Test Coverage
+        run: cd packages/gd-ui-vite && pnpm run coverage
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          directory: packages/gd-ui-vite/coverage
+          token: ${{ secrets.CODECOV_TOKEN }}
