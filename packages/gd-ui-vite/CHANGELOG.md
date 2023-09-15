@@ -1,5 +1,11 @@
 # gd-ui-vite
 
+## 0.6.0
+
+### Minor Changes
+
+- update to the version 0.6.0 to test publish workflow
+
 ## 0.5.0
 
 ### Minor Changes
