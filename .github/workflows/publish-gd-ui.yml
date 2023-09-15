@@ -10,7 +10,7 @@ on:
 jobs:
   publish:
     # 新增startsWith，用于修复非publish-gd-ui分支的pull_request合并到main分支，也会触发该工作流进行发布npm包
-    if: startsWith(github.head_ref, "publish-gd-ui")
+    if: startsWith(github.head_ref, 'publish-gd/')
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     name: "publish npm"
