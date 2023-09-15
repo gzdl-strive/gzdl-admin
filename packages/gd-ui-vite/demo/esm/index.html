@@ -11,7 +11,7 @@
   <div id="app"></div>
   <script type="module">
     import { createApp } from "vue/dist/vue.esm-bundler.js";
-    import GdUI from "../../dist/gd-ui.mjs";
+    import GdUI, { JSXButton, SFCButton } from "../../dist/gd-ui.mjs";
     
     createApp({
       template: `
@@ -19,7 +19,7 @@
         <GButton color="blue" icon="search" round :disabled="false">普通按钮</GButton>
         <br />
         <JSXButton round disabled />
-        <SFCButton />
+        <SFCButton></SFCButton>
       `
     }).use(GdUI).mount("#app");
   </script>
