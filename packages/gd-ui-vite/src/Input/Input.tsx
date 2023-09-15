@@ -154,6 +154,7 @@ export default defineComponent({
             <div
               v-show={showPwd.show}
               class="
+                g-input-pwd
                 position-absolute right-2 top-50% translate-y--1/2
                 cursor-pointer
                 select-none
@@ -197,6 +198,7 @@ export default defineComponent({
         <div
           v-show={showClear.value}
           class="
+            g-input-clearable
             position-absolute right-2 top-50% translate-y--1/2
             cursor-pointer
           "
@@ -207,6 +209,7 @@ export default defineComponent({
         {showWordLimitVisible.value ? (
           <div
             class="
+              g-input-limit
               position-absolute right-2 bottom-0 translate-y--3/4
               text-1 text-#909399
               cursor-pointer
