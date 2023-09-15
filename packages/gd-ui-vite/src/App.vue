@@ -95,7 +95,7 @@
         <GCol :span="6">333</GCol>
       </GRow>
     </div>
-    <div class="section">
+    <div class="section hide">
       <h3>input输入框</h3>
       <GInput placeholder="test" class="input" clearable />
       <GInput disabled class="input" />
@@ -127,6 +127,18 @@
         show-word-limit
       />
     </div>
+    <div class="section">
+      <h3>基础</h3>
+      <span>{{ count }}</span>
+      <GInputNumber class="input-number" v-model="count"></GInputNumber>
+      <GInputNumber :controls="false" class="input-number"></GInputNumber>
+      <GInputNumber :step="2" class="input-number"></GInputNumber>
+      <GInputNumber :step="2" disabled class="input-number"></GInputNumber>
+      <h3>尺寸</h3>
+      <GInputNumber :step="10" size="small" class="input-number"></GInputNumber>
+      <GInputNumber :step="6" size="medium" class="input-number"></GInputNumber>
+      <GInputNumber :step="3" size="large" class="input-number"></GInputNumber>
+    </div>
   </div>
 </template>
 
@@ -138,9 +150,11 @@ export default {
   setup() {
     const msg = ref("Hello");
     const pwd = ref("");
+    const count = ref<number>(1);
     return {
       msg,
       pwd,
+      count,
     };
   },
   components: { SFCButton, JSXButton },
@@ -166,7 +180,8 @@ export default {
   margin: 0 0.5rem;
 }
 
-.input {
+.input,
+.input-number {
   margin: 0.5rem 0;
 }
 </style>

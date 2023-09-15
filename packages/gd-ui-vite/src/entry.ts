@@ -6,6 +6,7 @@ import { Link } from "./Link";
 import { Row } from "./Row";
 import { Col } from "./Col";
 import { Input } from "./Input";
+import { InputNumber } from "./InputNumber";
 import "uno.css";
 
 // 导出单独组件
@@ -21,5 +22,6 @@ export default {
     app.component(Row.name, Row);
     app.component(Col.name, Col);
     app.component(Input.name, Input);
+    app.component(InputNumber.name, InputNumber);
   },
 };

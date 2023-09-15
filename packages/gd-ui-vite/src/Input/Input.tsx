@@ -63,7 +63,7 @@ export default defineComponent({
   props,
   setup(props, { attrs }) {
     const { type } = props;
-    const inputValue = ref<string>(
+    const inputValue = ref<string | number>(
       attrs?.modelValue ? (attrs.modelValue as string) : "",
     );
     const hovering = ref(false);
@@ -215,7 +215,7 @@ export default defineComponent({
               cursor-pointer
             "
           >
-            {inputValue.value.length} / {props.maxLength}
+            {`${inputValue.value}`.length} / {props.maxLength}
           </div>
         ) : (
           ""
