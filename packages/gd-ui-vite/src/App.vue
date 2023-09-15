@@ -138,6 +138,9 @@
       <GInputNumber :step="10" size="small" class="input-number"></GInputNumber>
       <GInputNumber :step="6" size="medium" class="input-number"></GInputNumber>
       <GInputNumber :step="3" size="large" class="input-number"></GInputNumber>
+      <h3>max/min</h3>
+      <span>count: {{ count }}&nbsp;&nbsp;</span>
+      <GInputNumber v-model="count" :max="10" :min="3" :step="3"></GInputNumber>
     </div>
   </div>
 </template>
