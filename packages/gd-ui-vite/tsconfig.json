@@ -9,7 +9,7 @@
       "@": ["./src"],
       "@/*": ["./src/*"]
     },
-    "forceConsistentCasingInFileNames": false
+    "forceConsistentCasingInFileNames": false,
   },
   "include": [
     "./**/*.*",
@@ -19,5 +19,5 @@
     "node_modules"
   ],
   "esModuleInterop": true,
-  "allowSyntheticDefaultImports": "true"
+  "allowSyntheticDefaultImports": "true",
 }
