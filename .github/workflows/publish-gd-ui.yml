@@ -12,6 +12,9 @@ jobs:
     # 新增startsWith，用于修复非publish-gd-ui分支的pull_request合并到main分支，也会触发该工作流进行发布npm包
     if: github.head_ref == publish-gd-ui
     runs-on: ubuntu-latest
+    steps:
+      - name: Output some message
+        run: echo "validate pass......."
   publish:
     needs: validate
     if: github.event.pull_request.merged == true
