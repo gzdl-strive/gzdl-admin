@@ -43,6 +43,8 @@ const safelist = [
     (size) => `text-${size}`,
   ),
   ...generateSafelistPXY("h", 20),
+  ...generateSafelistPXY("w", 20),
+  ...generateSafelistPXY("leading", 20),
   ...generateSafelistPXY("line-height", 20),
   ...generateSafelistPXY("px", 8),
   ...generateSafelistPXY("py", 8),
