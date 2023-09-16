@@ -1,3 +1,5 @@
+import DemoBlockPlugin from "vitepress-theme-demoblock";
+
 const sidebar = {
   '/': [
     { text: '快速开始', link: '/' },
@@ -12,10 +14,12 @@ const sidebar = {
     { text: 'form',
       children: [
         { text: 'Input 输入框', link: '/components/form/input/' },
+        { text: 'Input-Number数字输入框', link: '/components/form/input-number/' },
       ]
     },
   ]
-}
+};
+const environmentPath = process.argv.slice(2).includes("dev") ? "" : "/gzdl-admin/";
 const config = {
   title: "🔨 GdUI",
   description: "GdUI组件库",
@@ -25,11 +29,11 @@ const config = {
   markdown: {
     config: md => {
       // 添加DemoBlock插槽
-      const { demoBlockPlugin } = require("vitepress-theme-demoblock");
+      const { demoBlockPlugin } = DemoBlockPlugin; 
       md.use(demoBlockPlugin);
     }
   },
-  base: "/gzdl-admin/"
+  base: environmentPath,
 };
 
 export default config;
