@@ -127,7 +127,7 @@
         show-word-limit
       />
     </div>
-    <div class="section">
+    <div class="section hide">
       <h3>基础</h3>
       <span>{{ count }}</span>
       <GInputNumber class="input-number" v-model="count"></GInputNumber>
@@ -142,22 +142,56 @@
       <span>count: {{ count }}&nbsp;&nbsp;</span>
       <GInputNumber v-model="count" :max="10" :min="3" :step="3"></GInputNumber>
     </div>
+    <div class="section">
+      <h3>基础1——通过指定name、value、label</h3>
+      <GRadio v-model="radioModel.radio1" label=" Hello world"></GRadio>
+      <p>radio: {{ radioModel.radio }}</p>
+      <GRadio :value="radioModel.radio" label="a" name="zm" @input="radioInput">
+        1111
+      </GRadio>
+      <GRadio :value="radioModel.radio" label="b" name="zm" @input="radioInput">
+        2222
+      </GRadio>
+      <h3>基础2——v-model</h3>
+      <p>radio2: {{ radioModel.radio2 }}</p>
+      <GRadio v-model="radioModel.radio2" label="aaa">选项1</GRadio>
+      <GRadio v-model="radioModel.radio2" label="bbb">选项2</GRadio>
+      <GRadio v-model="radioModel.radio2" label="ccc">选项3</GRadio>
+      <h3>禁用——disabled</h3>
+      <GRadio v-model="radioModel.radio3" disabled label="红中">红中🀄️</GRadio>
+      <GRadio v-model="radioModel.radio3" label="微风">微风🌬</GRadio>
+      <GRadio v-model="radioModel.radio3" disabled label="鸟儿">鸟儿🐦</GRadio>
+      <GRadio v-model="radioModel.radio3" label="狮子">狮子🦁️</GRadio>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { SFCButton, JSXButton } from "./entry";
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 export default {
   name: "App",
   setup() {
     const msg = ref("Hello");
     const pwd = ref("");
     const count = ref<number>(1);
+    const radioModel = reactive({
+      radio: "a",
+      radio1: "",
+      radio2: "",
+      radio3: "中",
+    });
+
+    const radioInput = (val) => {
+      radioModel.radio = val;
+    };
+
     return {
       msg,
       pwd,
       count,
+      radioModel,
+      radioInput,
     };
   },
   components: { SFCButton, JSXButton },

@@ -15,6 +15,7 @@ const sidebar = {
       children: [
         { text: 'Input 输入框', link: '/components/form/input/' },
         { text: 'Input-Number数字输入框', link: '/components/form/input-number/' },
+        { text: 'Radio单选框', link: '/components/form/radio/' },
       ]
     },
   ]
