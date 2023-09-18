@@ -32,6 +32,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install Module
         run: pnpm install
-      - run: npm publish packages/create-gd-ui-app
+      - run: cd packages/create-gd-ui-app && npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN2 }}
