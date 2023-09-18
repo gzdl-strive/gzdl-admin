@@ -1,6 +1,6 @@
 {
   "name": "create-gd-ui-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "gd-ui工程脚手架",
   "main": "index.js",
   "type": "module",
