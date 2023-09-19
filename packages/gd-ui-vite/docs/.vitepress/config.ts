@@ -1,4 +1,5 @@
 import DemoBlockPlugin from "vitepress-theme-demoblock";
+import { defineConfig } from "vitepress";
 
 const sidebar = {
   '/': [
@@ -28,6 +29,10 @@ const config = {
     sidebar,
   },
   markdown: {
+    theme: {
+      light: "vitesse-light",
+      dark: "vitesse-dark"
+    },
     config: md => {
       // 添加DemoBlock插槽
       const { demoBlockPlugin } = DemoBlockPlugin; 
@@ -37,4 +42,4 @@ const config = {
   base: environmentPath,
 };
 
-export default config;
+export default defineConfig(config);
