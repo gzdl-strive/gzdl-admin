@@ -2,10 +2,10 @@
   "name": "gd-ui-vite",
   "version": "0.6.0",
   "description": "基于Vue构建的UI组件库",
-  "main": "index.js",
+  "main": "gd-ui.mjs",
   "scripts": {
     "dev": "vite",
-    "build": "pnpm build:components",
+    "build": "pnpm build:components && cp package.json dist/package.json && cp README.md dist/README.md",
     "build:all": "vite build",
     "build:components": "esno ./scripts/build.ts",
     "test": "vitest",
