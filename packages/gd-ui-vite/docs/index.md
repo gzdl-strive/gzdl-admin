@@ -1,4 +1,4 @@
-# 🔨 gd-ui-vite Introduce
+# gd-ui-vite Introduce
 一个Mini版的基于Vue的UI组件库，通过Vite构建.
 
 ## Features

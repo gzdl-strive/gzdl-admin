@@ -1,5 +1,5 @@
 import DemoBlockPlugin from "vitepress-theme-demoblock";
-import { defineConfig } from "vitepress";
+import { defineConfig, HeadConfig } from "vitepress";
 
 const sidebar = {
   '/': [
@@ -25,9 +25,10 @@ const environmentPath = process.argv.slice(2).includes("dev") ? "" : "/gzdl-admi
 const config = {
   title: "gd-ui-vite",
   description: "gd-ui-vite组件库",
+  head: [['link', { rel: 'icon', href: 'http://124.222.103.60:8892/images/gd-ui-vite.svg' }]] as HeadConfig[],
   themeConfig: {
     sidebar,
-    logo: "https://vitepress.dev/vitepress-logo-mini.svg"
+    logo: "http://124.222.103.60:8892/images/gd-ui-vite.svg"
   },
   markdown: {
     theme: {
