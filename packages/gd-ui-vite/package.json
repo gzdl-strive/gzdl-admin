@@ -1,6 +1,6 @@
 {
   "name": "gd-ui-vite",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "基于Vue构建的UI组件库",
   "main": "index.js",
   "scripts": {
