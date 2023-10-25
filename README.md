@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="150" src="https://vuejs.org/images/logo.png" alt="Vue logo">
+  <img width="150" src="http://124.222.103.60:8892/images/gd-ui-vite.svg" alt="Vue logo">
 </p>
 
 <h2 align="center">gzdl-admin</h2>

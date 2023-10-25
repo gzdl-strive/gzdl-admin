@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100" src="./public/logo.png" alt="Vue logo">
+  <img width="100" src="http://124.222.103.60:8892/images/gd-ui-vite.svg" alt="Vue logo">
 </p>
 
 <h2 align="center">gd-ui-vite</h2>
