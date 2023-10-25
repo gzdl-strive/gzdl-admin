@@ -1,6 +1,6 @@
 {
   "name": "gd-ui-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The GdUI Rep Demo to Test",
   "main": "index.js",
   "scripts": {

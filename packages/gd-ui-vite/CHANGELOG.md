@@ -1,5 +1,11 @@
 # gd-ui-vite
 
+## 0.7.0
+
+### Minor Changes
+
+- use the custom logo
+
 ## 0.6.0
 
 ### Minor Changes
