@@ -25,10 +25,10 @@ const environmentPath = process.argv.slice(2).includes("dev") ? "" : "/gzdl-admi
 const config = {
   title: "gd-ui-vite",
   description: "gd-ui-vite组件库",
-  head: [['link', { rel: 'icon', href: 'https://github.com/gzdl-strive/gzdl-admin/blob/main/packages/gd-ui-vite/public/logo.svg' }]] as HeadConfig[],
+  head: [['link', { rel: 'icon', href: '/logo.svg' }]] as HeadConfig[],
   themeConfig: {
     sidebar,
-    logo: "https://github.com/gzdl-strive/gzdl-admin/blob/main/packages/gd-ui-vite/public/logo.svg"
+    logo: "/logo.svg"
   },
   markdown: {
     theme: {
